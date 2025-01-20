@@ -1,11 +1,11 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_dropper": {
+    "has_blue_ice": {
       "conditions": {
         "items": [
           {
-            "items": "minecraft:dropper"
+            "items": "minecraft:blue_ice"
           }
         ]
       },
@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "minecraft:packed_ice"
+        "recipe": "misc:unpacked_ice"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -21,12 +21,12 @@
   "requirements": [
     [
       "has_the_recipe",
-      "has_dropper"
+      "has_blue_ice"
     ]
   ],
   "rewards": {
     "recipes": [
-      "minecraft:packed_ice"
+      "misc:unpacked_ice"
     ]
   }
 }
