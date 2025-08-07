@@ -78,6 +78,19 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                         .criterion(hasItem(Items.DROPPER), conditionsFromItem(Items.DROPPER))
                         .group("packed_ice")
                         .offerTo(exporter);
+
+                createShaped(RecipeCategory.BUILDING_BLOCKS, Items.HONEYCOMB_BLOCK)
+                        .pattern("###")
+                        .pattern("###")
+                        .pattern("###")
+                        .input('#', Items.HONEYCOMB)
+                        .criterion(hasItem(Items.DROPPER), conditionsFromItem(Items.DROPPER))
+                        .offerTo(exporter);
+
+                createShapeless(RecipeCategory.MISC, Items.HONEYCOMB,9)
+                        .input(Items.HONEYCOMB_BLOCK)
+                        .criterion(hasItem(Items.HONEYCOMB_BLOCK), conditionsFromItem(Items.HONEYCOMB_BLOCK))
+                        .offerTo(exporter, "misc:honeycomb");
             }
         };
     }
