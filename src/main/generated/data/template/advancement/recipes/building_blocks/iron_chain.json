@@ -1,11 +1,11 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_honeycomb_block": {
+    "has_dropper": {
       "conditions": {
         "items": [
           {
-            "items": "minecraft:honeycomb_block"
+            "items": "minecraft:dropper"
           }
         ]
       },
@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "template:honeycomb"
+        "recipe": "template:iron_chain"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -21,12 +21,12 @@
   "requirements": [
     [
       "has_the_recipe",
-      "has_honeycomb_block"
+      "has_dropper"
     ]
   ],
   "rewards": {
     "recipes": [
-      "template:honeycomb"
+      "template:iron_chain"
     ]
   }
 }

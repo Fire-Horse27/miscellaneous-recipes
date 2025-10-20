@@ -21,12 +21,21 @@ public class ModRecipeProvider extends FabricRecipeProvider {
         return new RecipeGenerator(registries, exporter) {
             @Override
             public void generate() {
-                createShaped(RecipeCategory.BUILDING_BLOCKS, Items.CHAIN,4)
+                createShaped(RecipeCategory.BUILDING_BLOCKS, Items.IRON_CHAIN,4)
                         .pattern("#")
                         .pattern("I")
                         .pattern("#")
                         .input('#', Items.IRON_NUGGET)
                         .input('I', Items.IRON_INGOT)
+                        .criterion(hasItem(Items.DROPPER), conditionsFromItem(Items.DROPPER))
+                        .offerTo(exporter);
+
+                createShaped(RecipeCategory.BUILDING_BLOCKS, Items.COPPER_CHAINS.unaffected(),4)
+                        .pattern("#")
+                        .pattern("I")
+                        .pattern("#")
+                        .input('#', Items.COPPER_NUGGET)
+                        .input('I', Items.COPPER_INGOT)
                         .criterion(hasItem(Items.DROPPER), conditionsFromItem(Items.DROPPER))
                         .offerTo(exporter);
 

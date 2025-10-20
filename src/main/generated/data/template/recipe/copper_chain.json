@@ -2,8 +2,8 @@
   "type": "minecraft:crafting_shaped",
   "category": "building",
   "key": {
-    "#": "minecraft:iron_nugget",
-    "I": "minecraft:iron_ingot"
+    "#": "minecraft:copper_nugget",
+    "I": "minecraft:copper_ingot"
   },
   "pattern": [
     "#",
@@ -12,6 +12,6 @@
   ],
   "result": {
     "count": 4,
-    "id": "minecraft:chain"
+    "id": "minecraft:copper_chain"
   }
 }
